@@ -675,7 +675,7 @@ section {
   color: #626262;
 }
 .counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
+  background: url("../img/serverroom.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -1166,4 +1166,10 @@ section {
   padding-right: 20px;
   text-align: justify;
   font-size: 14px;
+}
+.git{
+  border-radius: 22px;
+}
+.kapcs{
+  text-align: center;
 }
