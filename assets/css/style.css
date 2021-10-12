@@ -1185,3 +1185,7 @@ td{
   border: solid 1px grey;
   text-align: center;
 }
+hr {
+  width: 100%;
+  color:#444444;
+}
