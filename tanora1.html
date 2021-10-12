@@ -92,38 +92,7 @@
         </div>
       </div>
 
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-computer-line"></i>
-            <h3><a href="">1.óra</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-computer-line"></i>
-            <h3><a href="">2.óra</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-computer-line"></i>
-            <h3><a href="">3.óra</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-computer-line"></i>
-            <h3><a href="">4.óra</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-computer-line"></i>
-            <h3><a href="">5.óra</a></h3>
-          </div>
-        </div>
-      </div>
+      
 
     </div>
   </section><!-- End Hero -->
@@ -136,30 +105,127 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2 node" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/node-js.jpg" class="img-fluid" alt="">
+            <img src="assets/abra/kliensserver.PNG" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content nodekeret" data-aos="fade-right"
             data-aos-delay="100">
-            <h3>{ Node.js }</h3>
             <p class="fst-italic">
-              A Node.js (vagy más néven Node) egy rendszer, melyben JavaScriptben írhatunk szerver oldali
-              alkalmazásokat. Maga a rendszer C/C++-ban íródott, és egy esemény alapú I/O rendszert takar a Google V8
-              JavaScript motorja felett. A Node célja, hogy egy egyszerű felületet adjon skálázható hálózati
-              alkalmazások írására. Azt tudjuk, hogy a JavaScript a világon a jelenleg legnépszerűbb programozási nyelv,
-              többek között ezért esett erre a nyelvre a választás. A JavaScript nyelvnek vannak más sajátosságai,
-              amelyek szintén előtérbe kerülnek a rendszer használata során. Ahogy a böngészőben, úgy Node alatt is
-              egyetlen esemény hurokban (event loop) fut a program, és ez adja az egyik legfontosabb előnyt.
+              <h4>Mi történik, amikor a címsorba beírjuk az URL-t?</h4>
+              <ol>
+                <li>Történik egy domain lekérés. A domain portja: 53 környékén. </li>
+                <li>Beazonosítjuk a távoli szervert. Mi történik ezután? </li>
+                <li>Elküldünk neki egy kérést. Request egy csomag. 
+                  A csomag miből áll? Mindig megy egy head, és egy body. 
+                  Mi van a requestben? Benne van az URL! 
+                  </li>
+                <li>A request erőforrás alapján varázslat történik. Ezt a varázslatot a NODE.JS-sel fogjuk elvégezni.</li>
+                <li>Választ küld. Response egy csomag. 
+                  Mi van a csomagban? head, és body.
+                  MI van a bodyban? A tartalom. A tartalom ami megjelenik, pl html, jpg, mov.</li>
+                <li>A Chrome lerendereli és megjeleníti.</li>
+              </ol>
+              <br>
+              Ami a háttérben megy, az a back end, ami az előtérben, az a react és a front end.
 
-              A Node.js-t úgy írták meg, hogy (szinte) minden esemény aszinkron legyen, ezért a program sosem
-              blokkolódik, azaz nem kell várni, hogy egy művelet befejeződjön, vele párhuzamosan futtathatunk további
-              műveleteket. Ez pontosan úgy működik, mint a böngészőben levő XHR kérések, vagy más események, mint
-              például a click, mouseover. Ez az alkalmazás folyamatosabb futását, több alkalmazás párhuzamosítását,
-              valamint az egész rendszer optimálisabb működését teszi lehetővé.
+              <br><br>
 
-              A közhiedelemmel ellentétben a Node.JS és a böngésző jelentősen különböznek egymástól, annak ellenére hogy
-              mindkettő a JavaScript nyelven alapszik. A node.js veszi az alap nyelvet akárcsak bármelyik böngésző
-              motor, és különböző API-kkal bővíti azt, ezzel lehetőséget nyújtva szerveroldali műveletekre, hálózati
-              feladatok ellátására.
+              Mivel fogunk foglalkozni a NODE.js-ben? --> Request-el, response-al és a varázslattal.
+              <br><br>
+              Mi a node.js? --> Javascript keretrendszer, ami a háttérben fut. 
+              <br><br>
+              <strong>Javascript keretrendszer különbségek:</strong>
+              <br><br>
+              <ul>
+                <li>-	Front end, react: felhasználóval való kommunikáció, interaktivitásért felelnek, és megvalósíthatnak üzleti politikát is. </li>
+                <li>-	Back end keretrendszer: kizárólag az üzleti logikáért felel, a háttérben futó interaktív folyamatokat helyezzük ide. Back end keretrendszer (Node.js) képes külső adatforrásokhoz való hozzáféréshez. A Node.js képes fájlt írni, olvasni, képes adatbázist manipulálni.</li>
+             </ul>
+             <br><br>
+             <strong>URL</strong>: egységes erőforrás leíró. Az URL központi része a servernek a címe.
+             <br>
+             Hova gépelünk? --> Böngésző címsorába írjuk az URL-t.
+             <br><br>
+             https://hwsw.hu:port/path#poz?kulcsérték&kulcsérték
+             <br><br>
+             <table id="tablazat" class="tablazat">
+               <tr>
+                 <th>https</th>
+                 <th>:</th>
+                 <th>//</th>
+                 <th>hwsw.hu</th>
+                 <th>:port</th>
+                 <th>/</th>
+                 <th>path</th>
+                 <th>#poz</th>
+                 <th>?kulcsérték</th>
+               </tr>
+               <tr>
+                 <td>4</td>
+                 <td>3</td>
+                 <td>2</td>
+                 <td>1</td>
+                 <td>5</td>
+                 <td>6</td>
+                 <td>7</td>
+                 <td>8</td>
+                 <td>9</td>
+               </tr>
+             </table>
+             <br><br>
+             <ol>
+               <li>domain név: hwsw.hu – történik egy domain lekérés.</li>
+               <li>minden server erőforrás //-el kezdődik, csak ezután lehet megadni a konkrét domain nevet.</li>
+               <li>: csak elválasztó karakter</li>
+               <li>https: protokoll, milyen protokoll szerint szeretnénk kommunikálni. Ehhez egy alapértelmezett port cím tartozik. (http-80, https-443)</li>
+               <li>:  újabb kettőspont. Ha nem alapértelmezett a protokoll, akkor a port címet megmondhatjuk. Megmondjuk, hogy mit keressen a request. Ha a server más porton várja a kérést, mint az alapértelmezett, akkor : után meg kell adni ezt a port címet.</li>
+               <li>/ jel. Ez a /jel jelenti a webserver gyökérkönyvtárát.</li>
+               <li>path: helyi erőforrás (server) leírása. Konkrét mappák, állományok kerülnek megadásra. path= fájlrendszerben található útvonalat jelent.</li>
+               <li>#poz. Adott dokumentumon belüli pozíciót jelent.</li>
+               <li>? kulcsérték párok vannak a ? jel után. kulcs1 = érték&kulcs. Az erőforrást mégjobban szűkíthetjük. Az egyes kulcsérték párokat egymástól & jellel választjuk el.</li>
+             </ol>
+             <br>
+             A requestben ezek utaznak.
+             <br><br>
+             Az internetes kommunikáció szabályok szerint történik. Az RFC 7231-az internetes kommunikáció szabvány.
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <section id="aboutfolyt" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2 node" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/abra/nodedown.PNG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content nodekeret" data-aos="fade-right"
+            data-aos-delay="100">
+            <p class="fst-italic">
+              <h4>Menet:</h4>
+              <ol>
+                <li>Node.js</li>
+                <li>Visual Studio Code elindítása</li>
+                <li>Letöltjük a <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a>-t és telepítjük! telepítés...</li>
+                <li>Visual Studio Code újraindítása</li>
+                <li>Terminal => node –v  ----- Lekérdezi a verziót.
+                  <br>Ha kiír egy verzió számot, akkor sikerült a telepítés.
+                  <br>pl:
+                  <br>
+                  PS D:\SZOFTVERFEJLESZTO\NODE_JS\1_ora> node model -v
+                  <br>v16.11.0 
+                  <br>PS D:\SZOFTVERFEJLESZTO\NODE_JS\1_ora>
+                </li>
+                <li>npm –v: ha ez is visszaad egy számot, akkor tudunk dolgozni.</li>
+              </ol>
+              <br><br>
+              A node program olyan, mint a java program.
+
+
+
+
             </p>
           </div>
         </div>
@@ -432,10 +498,6 @@
         &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
         Designed by rekalaca <span>&</span><a href="https://bootstrapmade.com/"> BootstrapMade</a>
       </div>
     </div>

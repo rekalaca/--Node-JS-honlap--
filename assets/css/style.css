@@ -1173,3 +1173,15 @@ section {
 .kapcs{
   text-align: center;
 }
+.tablazat{
+  border: solid 2px grey;
+}
+th{
+  border: solid 1px grey;
+  width: 120px;
+  text-align: center;
+}
+td{
+  border: solid 1px grey;
+  text-align: center;
+}
