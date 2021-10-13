@@ -1189,3 +1189,9 @@ hr {
   width: 100%;
   color:#444444;
 }
+.code{
+  color: black;
+}
+.reqmetod{
+  text-align: left;
+}
